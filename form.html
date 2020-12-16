@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="login.html" onsubmit="validate(txtname.value,txtpass.value)">
+    <table border="1">
+        <tr>
+            <td colspan="2"><center>Login Form</center></td>
+        </tr>
+        <tr>
+            <td>UserName</td>
+            <td><input type="text" id="txtname"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" id="txtpass"></td>
+
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit" id="subbtn"></td>
+            <td><input type="button" value="Cancel" id="btncancel"></td>
+        </tr>
+    </table>
+    </form>
+    <script>
+        let validate=(uname,password)=>{
+           
+            if(uname=="" && password=="")
+            {
+                alert("Username and password should not be blank");
+                return false;
+                console.log(uname,password)
+            }
+            else return true;
+        }
+      
+    </script>
+    
+</body>
+</html>

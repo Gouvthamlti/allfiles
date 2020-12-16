@@ -1,0 +1,12 @@
+thead tr{
+    background-color: violet;
+    color: lightsalmon;
+}
+tbody tr:nth-child(odd)
+{
+    background-color:lightslategrey;
+}
+tbody tr:nth-child(even)
+{
+    background-color: linen;
+}

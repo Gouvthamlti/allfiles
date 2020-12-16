@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.cdn"></script>
+    <script>
+        $(function(){
+            $("button").click(function(){
+                $("li:nth-child(3)").css("background-color","yellow");
+                $("li").siblings().css("color","blue");
+                $("li ul li").siblings().css("color","brown");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Highlight siblings of 3rd item</button>
+    <ul>
+        <li>Apples
+            <ul>
+                <li>Big ones</li>
+                <li>Juicy ones</li>
+                <li>Red ones</li>
+            </ul>
+        </li>
+        <li>Orange</li>
+        <li>
+            papaya
+            <ul>
+                <li>papaya carcia</li>
+                <li>carcia</li>
+                <li>carcia bureas</li>
+            </ul>
+        </li>
+        <li>Lychee</li>
+        <li>Rambustan</li>
+        <li>mosambi</li>
+        <li>watermelon</li>
+    </ul>
+</body>
+</html>

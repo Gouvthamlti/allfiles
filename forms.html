@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>Ques 1</legend>
+            <h4>What is HTML?</h4>
+            <input type="radio" name="ans">Option A
+            <input type="radio" name="ans">Option B
+            <input type="radio" name="ans">Option C
+        </fieldset>
+        <pre>
+            <label for="txtname">Enter name</label> <input type="text" size="30" id="txtname">
+            Textbox1: <input type="text" value="Sample">
+            Textbox1: <input type="text" value="Sample" readonly> <!--Cant edit default value-->
+            Textbox1: <input type="text" required> <!--the field is required-->
+            <label for="mail">Email</label> <input type="email" id="mail">
+            <label for="mobile">Contact Number</label> <input type="number" min="66666666666" maxlength="99999999999">
+            Password <input type="password">
+            Range <input type="range" min="10" max="60">
+            Website <input type="url">
+            Search <input type="search">
+            DOB <input type="date">
+            Gender:
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female
+            Hobbies: 
+            <input type="checkbox">Reading Novel
+            <input type="checkbox">Playing BasketBall
+            <input type="checkbox">Dancing
+            State : <select name="" id="">
+                <option value="">Kerala</option>
+                <option value="">Karanataka</option>
+                <option value="">Maharashtra</option>
+            </select>
+            Address: 
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            Country: <input type="text" id="country" name="country" list="countrylist">
+            <datalist id="countrylist">
+                <option value="India"></option>
+                <option value="Australia"></option>
+                <option value="England"></option>
+            </datalist>
+
+            <input type="submit" value="register">   <input type="reset" value="reset">
+          
+        </pre>
+    </form>
+</body>
+</html>

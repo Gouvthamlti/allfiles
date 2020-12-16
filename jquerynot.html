@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="jquery.cdn"></script>
+<script>
+    $(function(){
+        $("button").click(function(){
+            $("li").not(":odd").fadeOut("slow");
+        });
+    });
+</script>
+<body>
+    <button>Fade out the odd list items</button>
+
+    <ul>
+        <li>Apple</li>
+        <li>Lichi</li>
+        <li>mango</li>
+        <li>grapes</li>
+        <li>orange</li>
+        <li>mosambi</li>
+    </ul>
+</body>
+</html>
+

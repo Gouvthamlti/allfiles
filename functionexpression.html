@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function expression</title>
+</head>
+<body>
+    <h1>Demo Function Expression</h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        var add=function sum(val1,val2){
+            return val1+val2;
+        }
+        document.getElementById("p1").innerHTML=add(10,20);
+        document.getElementById("p1").innerHTML=sum(20,20);//not valid..call by variable name
+    </script>
+</body>
+</html>

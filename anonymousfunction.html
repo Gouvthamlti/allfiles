@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anon Function</title>
+</head>
+<body>
+    <h1>Demo Anonymous Function</h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        var showmessage=function(){
+            var msg=""
+            document.getElementById('p1').innerHTML="aHello World"
+            alert("Hello World");
+        };
+        var sayhello=function(fn){
+            document.getElementById('p2').innerHTML="Hello "+fn
+        };
+        showmessage();
+        sayhello('Bill');
+    </script>
+</body>
+</html>

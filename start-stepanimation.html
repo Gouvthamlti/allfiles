@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start-step animation</title>
+</head>
+<script src="jquery.cdn"></script>
+<script>
+    $(function(){
+        $("#start").click(function(){
+            $("#animation").animate({
+                fontSize:"+=1.5em",
+            letterSpacing:"+=0.3em",
+
+            },4000);
+          
+            });
+            $("#stop").click(function(){
+                $("#animation").stop();
+        });
+    });
+</script>
+<body>
+    <button id="start">Start Animation</button>
+    <button id="stop">Stop Animation</button>
+
+    <div id="animation">Animation</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var names=["Audi","BMW","Fiat"];
+var car=new Array(3);
+car[0]="zen";
+car[1]="lancer"
+for(i=0;i<3;i++)
+{
+    document.write(car[i]+"<br>");
+}
+
+        var cars=new Array("Toyota","MZ");
+        for(i=0;i<names.length;i++)
+        {
+            document.write(names[i]+ "<br>")
+        }
+//example 2-D Array
+var usercredentials=[["testuser","Admin123"],["user1","USER1"]];
+usercredentials.push(["user2","password2"]);
+for (index = 0; index < usercredentials.length; index++) {
+    for(j=0;j<usercredentials.length;j++)
+{
+    document.write(usercredentials[index][j]+" ")
+    document.write("<br>")
+}
+
+    
+}
+
+    </script>
+
+</body>
+</html>

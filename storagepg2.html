@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        document.write("<h3>No of values is local storage"+localStorage.length+"</h3>");
+        document.write("<h3> welcome"+localStorage.username+"from"+localStorage.country+"</h3>");
+    // localStorage.clear();//to clear storage
+        document.write("<h2> Key(0)"+localStorage.key(0)+"</h2>");//it returns name of key
+        document.write("<h4> get value using getitem()"+localStorage.getItem("username")+"</h4>")
+        document.write("<h4> get value using getitem(localstorage.key(0))"+ localStorage.getItem(localStorage.key(0)));
+        localStorage.removeItem("color");
+        document.write("<h3>after remove color from local storage"+localStorage.length);
+        document.write("<h4> color"+localStorage.getItem('color')+"</h4>")
+    </script>
+</body>
+</html>

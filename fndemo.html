@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        <p id="demo"></p>
+        <p id="monthdemo"></p>
+        <p id="year"></p>
+        <p id="day"></p>
+    </h3>
+    <script>
+        var d2= new Date();
+        document.getElementById("demo").innerHTML="Full Date: "+d;
+        document.getElementById("monthdemo").innerHTML="Month: "+d.getMonth();
+        document.getElementById("year").innerHTML="fullyear :"+d.getFullYear();
+        document.getElementById("day").innerHTML="Fullday: "+d.getDay();
+        var d=new Date(2020,11,12);
+        document.getElementById("demo").innerHTML=" Date: "+d;
+        document.getElementById("monthdemo").innerHTML="Month: "+d.getMonth();
+        document.getElementById("year").innerHTML="fullyear :"+d.getFullYear();
+        document.getElementById("day").innerHTML="day: "+d.getDay();
+        var d1=new Date(2018,11);
+        document.getElementById("div").innerHTML="Full Date: "+d1.getDate();
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="jquery.cdn"></script>
+<script>
+    $(function(){
+        $("button").click(function(){
+            $("ul").find("li ul li").css("background-color","gray");
+            $("ul li ul li").has('span').css("color","gold");
+            $("li").eq(3).css("backgroud-color","yellow");
+        });
+    });
+</script>
+<body>
+    <button>Highlighted all nested lists</button>
+    <ul>
+        <li>Apples
+            <ul>
+                <li><span>ones</span></li>
+                <li>Juicy ones</li>
+                <li><span>Red ones</span></li>
+            </ul>
+        </li>
+        <li>Orange</li>
+        <li>
+            papaya
+            <ul>
+                <li><span>papaya carcia</span></li>
+                <li><span>carcia</span></li>
+                <li><span>carcia bureas</span></li>
+            </ul>
+        </li>
+        <li>Lychee</li>
+        <li>Rambustan</li>
+        <li>mosambi</li>
+        <li>watermelon</li>
+    </ul>
+</body>
+</html>

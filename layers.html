@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 80px;
+            height: 100px;
+            position: relative;
+        }
+        .infront{
+            background-color: red;
+            top: 10px;
+            left: 80px;
+            z-index: 3;
+            opacity: 0.3;
+        }
+        .behind{
+            background-color: gold;
+            top: -60px;
+            left: 35px;
+            z-index: 2;
+            opacity: 0.3;
+        }
+        .behind1{
+            background-color: greenyellow;
+            top: -120px;
+            left: 15px;
+            z-index: 2;
+            opacity: 0.3;
+        }
+    </style>
+    <div class="infront">div1</div>
+    <div class="behind">div1</div>
+    <div class="behind1">div1</div>
+</head>
+
+</html>

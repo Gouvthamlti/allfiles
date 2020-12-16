@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent class</title>
+    <style>
+        {
+            margin:10px;
+        }
+        div{
+            background-color: lightseagreen;
+        }
+        .frame{
+            border: 2px solid black;
+        }
+    </style>
+    <script src="jquery.cdn"></script>
+    <script>
+        $(document).ready(function(){
+            $("li").parents().addClass("frame")
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello</h1>
+        <p>this is <em>simple paragraph</em>.</p>
+        <ul>
+            <li>Item ek</li>
+            <li>Item dho</li>
+        </ul>
+    </div>
+    sample
+</body>
+</html>

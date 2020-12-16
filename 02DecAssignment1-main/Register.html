@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Assignment1" content="HTML and external CSS">
+        <link rel="stylesheet" href="stylesheet.css"> 
+        <title>Register</title>
+    </head>
+    <body style="background-color:lightgray;">
+        <script>
+            let validate=()=>{
+                var name=document.myform.uname.value;  
+                var password=document.myform.pwd.value;
+                var email=document.myform.email.value; 
+                var city=document.myform.city.value;
+                var num=document.myform.num.value; 
+                var pat=/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
+                var pat1=/^[0-9]{10}$/;
+               
+                if (name.length<3 || name=="" || name.length>10){  
+                alert("Name can't be blank");  
+                return false;  
+                }
+                else if(password==""){  
+                alert("Password should be entered");  
+                return false;
+                }  
+                else if(pat.test(email)==false || email==""){
+                    alert("Enter proper email");
+                    return false;
+                }
+                else if(city="")
+                {
+                    alert("Enter the city");
+                    return false;
+                }
+                else if(pat1.test(num)==false || num==""){
+                    alert("Enter proper mail")
+                    return false;
+                }
+                else
+                return true;
+            }
+          
+        </script>
+        
+    <header class="Intro">
+            <h1>Welcome to LTI</h1>
+    </header>
+
+    <nav class="NavBar">
+        <ul class="navlinks">
+         <li><a class="active" href="./Home.html">Home</a></li>
+         <li><a href="./Register.html">Register</a></li>
+         <li><a href="./Login.html">Login</a></li>
+       
+         <img class="logo"src="2.jpg" alt="LOGO"/>
+        </ul>
+     </nav>
+
+     <div class="Intro" >
+        <h2>Register yourself to explore amazing career oppurtunites!!</h2>
+            
+        <div class="container">
+            <form name =myform onsubmit="validate(uname.value,pwd.value,email.value,city.value)">
+                <label>Username:</label>
+                <input type="text" placeholder="Enter Username" name="uname" >
+                <label>Password: </label>
+                <input type="password" placeholder="Enter Password" name="pwd" >
+                <label>Email Address:</label>
+                <input type="text" placeholder="Enter Email Address" name="email" >
+                <label>City:</label>
+                <input type="text" placeholder="Enter City" name="city" >
+                <label>Mobile Number:</label>
+                <input type="text" min="66666666666" maxlength="9999999999" placeholder="Enter Mobile Number" name="num" >
+                
+                <button  type="submit" id="subbtn">Register</button>
+           </form>
+        </div>
+    </div>
+    <footer>
+        © 2020 Larsen and Toubro Infotech limited.
+    </footer>
+</body>
+</html>

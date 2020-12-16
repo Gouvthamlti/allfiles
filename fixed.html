@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .absolute{
+            position: absolute;
+            top:500px;
+            left:60px;
+            height: 2000px;
+            background-color: green;
+        }
+        .fixed{
+            position: fixed;
+            top: 10px;
+            left:10px;
+            background-color: gold;
+            width: 90px;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="absolute">
+        This tall div is absolutely positioned 500pixels from the top and 60 pixels from the left
+        of its containing block
+    </div>
+    <div class="fixed">
+        This is fixed div positined 10px from top and 10 px from left when the page is scrolled this box will be in a fixed position
+    </div>
+</body>
+</html>

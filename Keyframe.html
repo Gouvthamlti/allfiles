@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .box {
+        margin: 50px;
+        width:253px;
+        height:203px;
+        background: url("download.jpg") no-repeat;
+        position: relative;
+        /* Chrome, Safari, Opera */
+        -webkit-animation-name: moveit;
+        -webkit-animation-duration: 2s;
+        /* Standard syntax */
+        animation-name: moveit;
+        animation-duration: 10s;
+    }     
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes moveit {
+        from {left: 0;}
+        to {left: 50%;}
+    }     
+    /* Standard syntax */
+    @keyframes moveit {
+        from {left: 0;}
+        to {left: 50%;}
+    }
+    </style>
+</head>
+
+    <div class="box"></div>
+
+</html>

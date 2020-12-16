@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation chain</title>
+</head>
+<script src="jquery.cdn"></script>
+<script>
+    $("document").ready(function(){
+        $("button").click(function(){
+            $("#animation").animate({
+               fontSize:"+=1.5em" 
+            },500);
+            $("#animatiom").animate({
+               letterSpacing:"+0.3em" 
+            });
+        });
+    });
+</script>
+<body>
+    <button>Run Animation</button>
+    <div id="animation">Animation</div>
+    <p>Chained animation is where a single event triggers multiple animations, and they run in order(one after the other)</p>
+</body>
+</html>

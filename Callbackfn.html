@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sum=(a,b)=>a+b;
+        let ask=(question,yes,no)=>{
+            if(confirm(question))yes()
+            else no();
+        }
+        let showok=()=>{
+            alert("you agreed");
+        }
+        let showcan=()=>{
+            alert("You cancelled");
+        }
+
+        // function ask(question,yes,no)
+        // {
+        //     if(confirm(question))yes()
+        //     else no();
+        // }
+        // function showok() {
+        //     alert("you agreed");
+        // }
+        // function showcancel() {
+        //     alert("You cancelled");
+        // }
+        //function showok and showcancel are passed as arguements
+        ask("Do You Agree?",showok,showcan);
+    </script>
+</body>
+</html>
